@@ -299,17 +299,19 @@ export default function HomePage() {
 
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
-                <div
-                  className="bg-gray-300 h-64 rounded-lg flex items-center justify-center mb-6"
-                  role="img"
-                  aria-label="Mapa de ubicación de Zona 71"
-                >
-                  <div className="text-center">
-                    <MapPin className="text-red-500 mx-auto mb-2" size={48} />
-                    <p className="text-gray-600">Mapa de ubicación</p>
-                    <address className="text-sm text-gray-500 not-italic">Calle 21 #4798, Col. Centro</address>
-                  </div>
-                </div>
+                <div className="rounded-lg overflow-hidden mb-6" aria-label="Mapa de ubicación de Zona 71">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d119211.97859307186!2d-89.7625809!3d20.9776268!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715c514ab05f%3A0x3c3e9c6f98bfb166!2sEl%20Changarro!5e0!3m2!1ses!2smx!4v1751139205892!5m2!1ses!2smx"
+    width="100%"
+    height="260"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Mapa de ubicación de Zona 71"
+    className="w-full h-64"
+  ></iframe>
+</div>
               </div>
 
               <div>
